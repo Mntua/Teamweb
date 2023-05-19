@@ -1,0 +1,240 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px;
+}
+
+.tab {
+    display: flex;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.185);
+    align-content: center;
+    border-radius: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+
+.tab-right {
+    display: flex;
+    flex: 2;
+    flex-direction: row-reverse;
+}
+.tab-right, a{
+    vertical-align: middle;
+    text-decoration: none;
+    color: black;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.tab-right>a {
+    margin-top: 0px;
+}
+.but{
+    padding: 13px;
+    border: none;
+    border-radius: 15px;
+    margin-top: 2px;
+}
+
+
+.logo {
+    margin: 5px;
+    margin-top: 0px;
+    width: 100px;
+    border-radius: 12px;
+    display: inline-block;
+}
+
+.location-btn {
+    background-color: #f8b12c;
+    color: rgb(68, 68, 68);
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 15px;
+}
+.locations {
+    position: relative;
+    display: inline-block;
+}
+.location-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+.location-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.location-content a:hover {
+    background-color: #ddd;
+}
+.locations:hover .location-content {
+    display: block;
+}
+.locations:hover .location-btn {
+    background-color: #e79c23;
+}
+
+.intro {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+    margin-right: 0px;
+}
+.text-intro {
+    color: black;
+    flex: 1fr;
+    font-family: 'Tahoma';
+    font-size: 17px;
+    padding-right: 50px;
+    margin: 50px;
+    margin-right: 150px;
+    padding-top: 50px;
+    border-right: 1px solid #babebd;
+}
+.slide-intro div img {
+    width: 500px;
+    padding: 0;
+}
+.slide-intro {
+    align-content: center;
+    display: inline-block;
+    flex: 1fr;
+    padding: 0x;
+    margin: 0 auto;
+    margin-left: 20px;
+    overflow: hidden;
+    width: 500px;
+    box-shadow: 10px 18px 16px 10px rgba(0, 0, 0, 0.2);
+    height: auto;
+    border-radius: 10px;
+}
+.slideshow {
+    text-align: center;
+    width: calc(728px * 4);
+    animation: slide 10s ease infinite;
+}
+.slide {
+    float: left;
+    width: 500px;
+    margin: 0;
+    padding: 0;
+}
+@keyframes slide {
+         
+    /* Calculate the margin-left for
+  each of the slides */
+    
+    10% {
+        margin-left: 0;
+    }
+    40% {
+        margin-left: calc(-500px * 1);
+    }
+    70% {
+        margin-left: calc(-500px * 2);
+    }
+    100% {
+        margin-left: calc(-500px * 3);
+    }
+}
+
+.text-intro2 {
+    color: #f8b12c;
+    flex: 1fr;
+    font-family: 'verdana';
+    font-size: 20px;
+    padding: 20px;  
+    margin: 50px;
+    margin-right: 10px;
+    border: 1px solid #f8b12c;
+    transition: .2s;
+}
+.text-intro2:hover {
+    size: 100px;
+}
+
+ol h1 {
+    text-align: center;
+    text-decoration: underline;
+}
+ol p {
+    color: #bd7c14;
+}
+
+#outro {
+    background-color: #eff2f1;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    padding: 20px;
+    padding-top: 30px;
+    border-top: 1px solid #d0d5d4;
+    border-radius: 5px;
+}
+#outro h3{
+    margin-bottom: 50px;
+
+}
+
+
+
+
+/*for signup.html*/
+.signup-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    /* background: url("images/plane.gif"); */
+    background: url("images/cup.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    /*margin-left: 40%;
+    margin-top: 10%;   
+    background-color: pink;
+    align-items: center;
+    padding: 0px;*/
+}
+.signup {
+    padding: 7%;
+    width: 250px;
+    height: 250px;
+    backdrop-filter: blur(7px);
+    border-radius: 30px;
+    background: linear-gradient(100deg, rgba(0,0,0,.2), rgba(0,0,0,.2));
+    box-shadow: 0 10px 26px 0 rgba(0,0,0,.50);
+}
+.signup input {
+    color: gray;
+    background: rgba(0,0,0,0.3);
+    padding: 15px;
+    padding-right: 20%;
+    border: none;
+    border-radius: 20px;
+}
+.signup button {
+    background-color: rgba(255, 166, 0, 0.46);
+    text-align: right;
+    border: none;
+    border-radius: 20px;
+    padding: 15px;
+    padding-left: 33%;
+    padding-right: 33%;
+    transition: .2s;
+}
+.signup button:hover {
+    scale: 103%;
+    cursor: pointer;
+}
+
+ol img {
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.3);
+}
