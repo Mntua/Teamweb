@@ -191,8 +191,8 @@ ol p {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    /* background: url("images/plane.gif"); */
-    background: url("images/cup.png");
+    /* background: url("Images/plane.gif"); */
+    background: url("Images/cup.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; 
